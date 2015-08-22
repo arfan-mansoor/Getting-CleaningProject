@@ -13,22 +13,22 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 The aim of the project is to clean and extract usable data from the above zip file. R script called run_analysis.R that does the following:
 The input data containts the following data files:
 
-   * Item 1 Merges the training and the test sets to create one data set.
-   * Item 2 Extracts only the measurements on the mean and standard deviation for each measurement.
-   * Item 3 Uses descriptive activity names to name the activities in the data set
-   * Item 4 Appropriately labels the data set with descriptive variable names.
-   * Item 5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+   * Merges the training and the test sets to create one data set.
+   * Extracts only the measurements on the mean and standard deviation for each measurement.
+   * Uses descriptive activity names to name the activities in the data set
+   * Appropriately labels the data set with descriptive variable names.
+   * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 In this repository, you find:
 
 
-   * Item 1 run_analysis.R : the R-code run on the data set
+   *run_analysis.R : the R-code run on the data set
 
-   * Item 2 Tidy.txt : the clean data extracted from the original data using run_analysis.R
+   *Tidy.txt : the clean data extracted from the original data using run_analysis.R
 
-   * Item 3 CodeBook.md : the CodeBook reference to the variables in Tidy.txt
+   *CodeBook.md : the CodeBook reference to the variables in Tidy.txt
 
-   * Item 4 README.md : the analysis of the code in run_analysis.R
+   *README.md : the analysis of the code in run_analysis.R
 
 ## Getting Started
 ##Basic Assumption
@@ -106,19 +106,19 @@ Here are the names of the variables in extractedData
 names(extractedData)
 By examining extractedData, we can say that the following acronyms can be replaced:
 
-     * Item 1 Acc can be replaced with Accelerometer
+     *Acc can be replaced with Accelerometer
 
-     * Item 2 Gyro can be replaced with Gyroscope
+     *Gyro can be replaced with Gyroscope
 
-     * Item 3 BodyBody can be replaced with Body
+     *BodyBody can be replaced with Body
 
-     * Item 4 Mag can be replaced with Magnitude
+     *Mag can be replaced with Magnitude
 
-     * Item 5 Character f can be replaced with Frequency
+     *Character f can be replaced with Frequency
 
-     * Item 6 Character t can be replaced with Time
+     *Character t can be replaced with Time
 
-     * Item 7 V1 is replaced by name Activity 
+     *V1 is replaced by name Activity 
 
 names(extractedData)<-gsub("Acc", "Accelerometer", names(extractedData))
 names(extractedData)<-gsub("Gyro", "Gyroscope", names(extractedData))
